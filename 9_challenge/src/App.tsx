@@ -22,7 +22,8 @@ export function Product({ name, price, images: initialImages }: ProductProps) {
   return (
     <div>
       <div>
-        {name} ${price}
+        {name} ${price} 
+        <div>{images.map(x=><div>{x}</div>)}</div>
       </div>
       <button onClick={addImage}>Add image</button>
       {images.map((src) => (
@@ -42,7 +43,7 @@ function App() {
       name="Shampoo"
       price={2.99}
       images={[]}
-    />
+    ></Product>
     </>
   )
 }
