@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./reset.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700&family=Inter&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,900&display=swap" rel="stylesheet">   <style>
+    body{
+      border:1px solid black;
+      width:40%;
+      margin:auto;
+      height:100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .center{
+      display:flex;
+      align-items: center;
+      justify-content:center;
+      flex-direction: column;
+    }
+    img{
+      width:20px;
+      height:20px;
+    }
+    .test{
+      display:flex;
+    }
+    .reaction{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      /* content:fit; */
+      width:288px;
+      height:56px;
+      color: var(--Red, #F55);
+font-feature-settings: 'clig' off, 'liga' off;
+padding-left:16px;
+/* Body */
+font-family: Hanken Grotesk;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+      border-radius: 12px;
+background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55);
+    }
+    .memory{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--Yellow, #FFB21E);
+font-feature-settings: 'clig' off, 'liga' off;
+padding-left:16px;
+/* Body */
+font-family: Hanken Grotesk;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+      border:1px solid black;
+      width:288px;
+      height:56px;
+      border-radius: 12px;
+      background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E);
+    
+    }
+    .verbal{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--Green, #00BB8F);
+font-feature-settings: 'clig' off, 'liga' off;
+padding-left:16px;
+/* Body */
+font-family: Hanken Grotesk;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+      width:288px;
+      height:56px;
+      border-radius: 12px;
+      border-radius: 12px;
+      background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F);
+    }
+    .visual{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--Blue, #1125D6);
+      font-feature-settings: 'clig' off, 'liga' off;
+      padding-left:16px;
+      /* Body */
+      font-family: 'Hanken Grotesk';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border:1px solid black;
+      width:288px;
+      height:56px;
+      border-radius: 12px;
+      background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6);
+     
+    }
+    .text-icon{
+      padding-left: 12px;
+    }
+    .fraction{
+      margin-right: 12px;
+      color: var(--Dark-Navy, #303B59);
+text-align: right;
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* Body (Bold) */
+font-family: Hanken Grotesk;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+    }
+    
+    .denom{
+      font-family: Hanken Grotesk;
+      color: var(--Dark-Navy, #303B59);
+text-align: right;
+font-feature-settings: 'clig' off, 'liga' off;
+
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+opacity: 0.5;
+    }
+  .button{
+      display:flex;
+      justify-content: center;
+      width: 288px;
+      align-items: center;
+height: 56px;
+border-radius: 128px;
+background: var(--Dark-Navy, #303B59);
+color: var(--White, #FFF);
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* Body (Bold) */
+font-family: Hanken Grotesk;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+  </style>
+</head>
+<body>
+  <div class="center"> 
+    <div class="reaction"><span class="test"><img src="./assets/images/icon-reaction.svg" alt="reaction"/><span class="text-icon">Reaction</span></span><span class="fraction">80&nbsp <span class="denom">/&nbsp100<span></span></div>
+    <div class="memory"><span class="test"><img src="./assets/images/icon-memory.svg" alt="memory"/><span class="text-icon">Memory</span></span><span class="fraction">92&nbsp <span class="denom">/&nbsp100</span></span></div>
+    <div class="verbal"><span class="test"><img src="./assets/images/icon-verbal.svg" alt="verbal"/><span class="text-icon">Verbal</span></span><span class="fraction">61&nbsp <span class="denom">/&nbsp100</span></span></div>
+    <div class="visual"><span class="test"><img src="./assets/images/icon-visual.svg" alt="visual"/><span class="text-icon">Visual</span></span><span class="fraction">73&nbsp <span class="denom">/&nbsp100</span></span></div>
+    <div class="button">Continue</div>
+  </div>
+</body>
+</html>

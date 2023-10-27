@@ -1,0 +1,11 @@
+use a tool to convert the SVG to a background-image;
+
+https://www.svgbackgrounds.com/tools/svg-to-css/
+
+then cut paste the background image to css class
+
+.your-class{
+	background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="100" fill="url(%23paint0_linear_1_119)"/><defs><linearGradient id="paint0_linear_1_119" x1="100" y1="0" x2="100" y2="200" gradientUnits="userSpaceOnUse"><stop stop-color="%234D21C9"/><stop offset="1" stop-color="%232521C9" stop-opacity="0"/><stop offset="1" stop-color="%232521C9" stop-opacity="0"/></linearGradient></defs></svg>');
+}\
+index.html contains code without using figma files. 
+impossible to do this wo figma files. The style-guide.md files are inaccuratef
